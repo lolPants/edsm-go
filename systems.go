@@ -8,7 +8,7 @@ import (
 
 // SystemOptions defines options for the System method
 type SystemOptions struct {
-	// Set to `true` to get our internal ID for this system.
+	// Set to `true` to get the internal ID for this system.
 	ShowID bool
 
 	// Set to `true` to get the system coordinates.
@@ -69,7 +69,7 @@ func (c *Client) System(systemName string, options *SystemOptions) (*SystemStruc
 
 // SystemsOptions defines options for Systems methods
 type SystemsOptions struct {
-	// Set to `true` to get our internal ID for this system.
+	// Set to `true` to get the internal ID for this system.
 	ShowID bool
 
 	// Set to `true` to get the system coordinates.
@@ -102,7 +102,7 @@ type SystemsOptions struct {
 	// If both are set, EndDateTime will be used to calculate the interval.
 	EndDateTime *time.Time
 
-	// Set to `true` to get only systems featured on our home page.
+	// Set to `true` to get only systems featured on the EDSM home page.
 	// Featured systems are systems here we try to trilatered coordinates with a highest priority.
 	OnlyFeatured bool
 
@@ -206,7 +206,7 @@ type SphereSystemsOptions struct {
 	// Set to a value between 0 and radius to reduce the returned results.
 	MinRadius float64
 
-	// Set to `true` to get our internal ID for this system.
+	// Set to `true` to get the internal ID for this system.
 	ShowID bool
 
 	// Set to `true` to get the system coordinates.
@@ -320,7 +320,7 @@ type CubeSystemsOptions struct {
 	// Maximum value is 200.
 	Size float64
 
-	// Set to `true` to get our internal ID for this system.
+	// Set to `true` to get the internal ID for this system.
 	ShowID bool
 
 	// Set to `true` to get the system coordinates.
