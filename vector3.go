@@ -9,5 +9,5 @@ type Vector3 struct {
 
 // DistanceTo returns the distance to the target Vector3
 func (v *Vector3) DistanceTo(target *Vector3) float64 {
-	return Distance(v, target)
+	return distance(v, target)
 }
