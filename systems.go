@@ -174,11 +174,11 @@ func systemsCommon(c *Client, req *http.Request, o *SystemsOptions) ([]*SystemSt
 	q.Set("includeHidden", boolToQuery(o.IncludeHidden))
 
 	if o.StartDateTime != nil {
-		q.Set("startDateTime", formateDateTime(*o.StartDateTime))
+		q.Set("startDateTime", formatDateTime(*o.StartDateTime))
 	}
 
 	if o.EndDateTime != nil {
-		q.Set("endDateTime", formateDateTime(*o.EndDateTime))
+		q.Set("endDateTime", formatDateTime(*o.EndDateTime))
 	}
 
 	req.URL.RawQuery = q.Encode()
